@@ -37,6 +37,10 @@ function App() {
           <button onClick={() => setTigerScore(tigerScore + 7) } className="awayButtons__touchdown"> Away Touchdown</button>
           <button onClick={() => setTigerScore(tigerScore + 3) } className="awayButtons__fieldGoal"> Away Field Goal </button>
         </div>
+        <div className='awayButtons'>
+          <button onClick={() => setTigerScore(0)===setLionScore(0)} className="awayButtons__touchdown"> Reset </button> 
+          
+        </div>
       </section>
     </div>
   );
